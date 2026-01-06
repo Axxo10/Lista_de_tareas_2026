@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">  
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="titulo">✔ Lista de tareas</h1>
+        <p class="mensaje">tareayeayea</p>
+        <input type="text" class="tarea-entrada" placeholder="Lorem ipsum">
+        <div class="contenedor-botones">
+            <button class="boton-agregar">crear tarea</button>
+            <button class="boton-ocultar">ocultar completadas</button>
+            <button class="boton-eliminar">eliminar completadas</button>
+        </div>
+        <div class="contenedor-conteo">
+            <p>tareas totales<span class="tareas-totales">0</span></p>
+            <p>tareas terminadas<span class="tareas-terminadas">0</span></p>
+        </div>
+        <div class="contenedor-tareas">
+            <div class="tarea">
+                <p class="tarea-texto">estudiar</p>
+                <div class="tarea-iconos">
+                    <i>completar</i>
+                    <i class="bi bi-trash">eliminar</i>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
