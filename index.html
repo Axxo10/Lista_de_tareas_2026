@@ -1,4 +1,3 @@
-INDEX
 <!DOCTYPE html>
 
 <html lang="es">
@@ -7,23 +6,19 @@ INDEX
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tareas ✅</title>
-
-    <!-- Vinculación de la hoja de estilos -->
+    <title>Tereas Tareas</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Vinculación de la hoja de JS -->
     <script src="./script.js" defer></script>
       
-    <!-- Vincular Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
 
-    <!-- Vincular Iconos Bootstrap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+ 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <!-- Vincular FavIcon -->
+  
     <link rel="icon" href="./assets/favicon.png" type="image/png">
 
 </head>
@@ -31,44 +26,28 @@ INDEX
 <body>
 
     <div class="contenedor">
-        <h1 class="titulo">Lista de Tareas ✅</h1>
+        <h1 class="titulo">Lista de Tareas :></h1>
 
-        <p class="mensaje">Escribe tu próxima tarea c:</p>
+        <p class="mensaje" id="mensaje">Escribe tu tarea pa que no se te olvide</p>
 
         <input
             type="text"
             class="tarea-entrada"
+            id = "tareaEntrada"
             placeholder="Estudiar para la clase de..." />
 
         <div class="contenedor-botones">
-            <button class="boton boton-agregar">Crear Tarea</button>
-            <button class="boton boton-ocultar">Ocultar Completadas</button>
+            <button class="boton boton-agregar" id="botonAgregar">Crear Tarea</button>
+            <button class="boton boton-ocultar" id="botonOcultar">Ocultar Completadas</button>
             <button class="boton boton-eliminar">Eliminar Completadas</button>
         </div>
 
         <div class="contenedor-conteo">
-            <p>Tareas totales: <span class="tareas-totales">0</span></p>
+            <p>Tareas totales: <span class="tareas-totales"></span></p>
             <p>Tareas terminadas: <span class="tareas-terminadas">0</span></p>  
         </div>
 
-        <div class="contenedor-tareas">
-
-            <div class="tarea">
-                <p class="tarea-texto">Tarea 1: Estudiar para el examen de Limón</p>
-                <div class="tarea-iconos">
-                    <i class="bi bi-check-circle"></i>
-                    <i class="bi bi-trash2"></i>
-                </div>
-            </div>
-            
-            <div class="tarea tarea-completada">
-                    <p class="tarea-texto">Tarea 2: Grabar secuencia de escena del cortometraje</p>
-                    <div class="tarea-iconos">
-                        <i class="bi bi-dash-circle"></i>  
-                        <i class="bi bi-trash2"></i>
-                    </div>
-            </div>
-
+        <div class="contenedor-tareas" id="contenedorTareas">
         </div>
 
     </div>
